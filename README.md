@@ -47,7 +47,7 @@ dans le code source** et compile dans `microsip.exe`.
 ```cpp
 bool CmainDlg::CheckAdminAuth()
 {
-    const char* TOTPSecret = "BIENVEILLANCECONNECTEO";
+    const char* TOTPSecret = "****************";
     PasswordDlg dlg(this);
     if (dlg.DoModal() == IDOK) {
         std::string code = (LPCSTR)CStringA(dlg.code);
